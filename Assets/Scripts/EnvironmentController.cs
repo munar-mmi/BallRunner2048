@@ -21,7 +21,7 @@ public class EnvironmentController : MonoBehaviour
             {
                 winMenu.SetActive(true);
 
-                levelManager.NextLevel();
+                levelManager.NextLevel(playerObject.pointValue, playerObject.starValue);
 
                 playerObject.GameOver();
             }

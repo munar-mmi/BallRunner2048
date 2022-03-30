@@ -6,10 +6,11 @@ using TMPro;
 
 public class Point : MonoBehaviour
 {
-    public enum pointTypes { Player, Point, Barrier };
+    public enum pointTypes { Player, Point, Barrier, Star };
 
     public TextMeshPro pointValueText;
     public int pointValue;
+    public int starValue;
     public pointTypes pointType;
     public Color[] pointColors;
 
@@ -31,6 +32,7 @@ public class Point : MonoBehaviour
     public void GameOver()
     {
         pointValue = 2;
+        starValue = 0;
         ChangePlayer();
 
         transform.localScale = new Vector3(4.0f, 4.0f, 4.0f);
@@ -54,8 +56,15 @@ public class Point : MonoBehaviour
 
                 Destroy(collision.gameObject);
             }
+
+            else if (point.pointType.HasFlag(pointTypes.Star) & pointType.HasFlag(pointTypes.Player))
+            {
+                starValue++;
+
+                Destroy(collision.gameObject);
+            }
             
-            else if (point.pointType.HasFlag(pointTypes.Barrier) & pointValue >=64)
+            else if (point.pointType.HasFlag(pointTypes.Barrier) & pointValue >=4)
             {
                 pointValue /= 2;
                 ChangePlayer();

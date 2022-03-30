@@ -6,23 +6,39 @@ using UnityEngine;
 public class LevelManager : MonoBehaviour
 {
     public Button[] levelButtons;
+    public Level[] levels;
+    public LevelMenuController[] levelMenuControllers;
     public int currentLevel;
 
-    void Start()
+    public void OpenLevel()
     {
-        currentLevel = PlayerPrefs.GetInt("CurrentLevel");
-        NextLevel();
-    }
-
-    public void NextLevel()
-    {
-        PlayerPrefs.SetInt("CurrentLevel", currentLevel++);
-        for (int i = 0; i < levelButtons.Length; i++)
+        for (int i = 0; i < levels.Length - 1; i++)
         {
-            if (i < currentLevel)
+            if (levels[i].isComplete)
             {
-                levelButtons[i].interactable = true;
+                levelButtons[i + 1].interactable = true;
             }
         }
+
+        for (int i = 0; i < levels.Length; i++)
+        { 
+            levelMenuControllers[i].ChangeLevelMenu(levels[i].levelStar); 
+        }
+    }
+
+    public void NextLevel(int pointValue, int starValue)
+    {
+        Level level = levels[currentLevel - 1];
+        level.isComplete = true;
+        if(level.levelScore < pointValue)
+        {
+            level.levelScore = pointValue;
+        }
+        if(level.levelStar < starValue)
+        {
+            level.levelStar = starValue;
+        }
+        OpenLevel();
+        level.SaveLevel();
     }
 }

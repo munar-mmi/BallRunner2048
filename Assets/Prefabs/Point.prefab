@@ -128,6 +128,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   pointValueText: {fileID: 2848520492018773161}
   pointValue: 2
+  starValue: 4
   pointType: 1
   pointColors:
   - {r: 1, g: 0, b: 0, a: 0}

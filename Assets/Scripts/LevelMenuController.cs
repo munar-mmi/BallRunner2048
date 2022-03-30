@@ -5,11 +5,22 @@ using UnityEngine;
 
 public class LevelMenuController : MonoBehaviour
 {
-    public GameObject level, levelMenu, tapToPlay;
-    public LevelManager levelManager;
     public int levelID;
 
+    public GameObject level, levelMenu, tapToPlay;
+    public LevelManager levelManager;
+    public Image[] levelStars;
+    public EnvironmentController levelFinal;
+
     private GameObject levelObject;
+
+    public void ChangeLevelMenu(int starValue)
+    {
+        for(int i = 0; i < starValue; i++)
+        {
+            levelStars[i].GetComponent<Image>().color = new Color(255, 255, 0, 255);
+        }
+    }
 
     public void SelectLevel()
     {
