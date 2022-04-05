@@ -10,7 +10,7 @@ GameObject:
   m_Component:
   - component: {fileID: 7084407404514752201}
   m_Layer: 0
-  m_Name: Level
+  m_Name: Level 1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -227,7 +227,7 @@ GameObject:
   - component: {fileID: 5229347725658567498}
   - component: {fileID: 8944612599165349609}
   - component: {fileID: 7598252834916888245}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Point8
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -342,7 +342,7 @@ MonoBehaviour:
   pointValueText: {fileID: 5027995352817652844}
   pointValue: 8
   starValue: 4
-  pointType: 1
+  pointType: 0
   pointColors:
   - {r: 1, g: 0, b: 0, a: 0}
   - {r: 1, g: 0.078431375, b: 0.5764706, a: 0}
@@ -369,7 +369,7 @@ GameObject:
   - component: {fileID: 2538010165767392081}
   - component: {fileID: 5535978873214785620}
   - component: {fileID: 3117561780560765969}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Point1024
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -484,7 +484,7 @@ MonoBehaviour:
   pointValueText: {fileID: 8332726775825498191}
   pointValue: 1024
   starValue: 4
-  pointType: 1
+  pointType: 0
   pointColors:
   - {r: 1, g: 0, b: 0, a: 0}
   - {r: 1, g: 0.078431375, b: 0.5764706, a: 0}
@@ -681,7 +681,7 @@ GameObject:
   - component: {fileID: 1353033029193710800}
   - component: {fileID: 3537591458358596275}
   - component: {fileID: 2200810622260213284}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Point16
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -796,7 +796,7 @@ MonoBehaviour:
   pointValueText: {fileID: 5741981571318941306}
   pointValue: 16
   starValue: 4
-  pointType: 1
+  pointType: 0
   pointColors:
   - {r: 1, g: 0, b: 0, a: 0}
   - {r: 1, g: 0.078431375, b: 0.5764706, a: 0}
@@ -823,7 +823,7 @@ GameObject:
   - component: {fileID: 2790750096068205876}
   - component: {fileID: 4777595320079788789}
   - component: {fileID: 1064583379237746144}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Point32
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -938,7 +938,7 @@ MonoBehaviour:
   pointValueText: {fileID: 5358063291335330910}
   pointValue: 32
   starValue: 4
-  pointType: 1
+  pointType: 0
   pointColors:
   - {r: 1, g: 0, b: 0, a: 0}
   - {r: 1, g: 0.078431375, b: 0.5764706, a: 0}
@@ -965,7 +965,7 @@ GameObject:
   - component: {fileID: 4231730847213030614}
   - component: {fileID: 8681573743904238850}
   - component: {fileID: 5986100509830485178}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Point128
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1080,7 +1080,7 @@ MonoBehaviour:
   pointValueText: {fileID: 2514932722085835117}
   pointValue: 128
   starValue: 4
-  pointType: 1
+  pointType: 0
   pointColors:
   - {r: 1, g: 0, b: 0, a: 0}
   - {r: 1, g: 0.078431375, b: 0.5764706, a: 0}
@@ -1957,7 +1957,7 @@ GameObject:
   - component: {fileID: 4636380984551899109}
   - component: {fileID: 238245367181995396}
   - component: {fileID: 5599760249415167555}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Point4
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2072,7 +2072,7 @@ MonoBehaviour:
   pointValueText: {fileID: 1207021995807230700}
   pointValue: 4
   starValue: 4
-  pointType: 1
+  pointType: 0
   pointColors:
   - {r: 1, g: 0, b: 0, a: 0}
   - {r: 1, g: 0.078431375, b: 0.5764706, a: 0}
@@ -2099,7 +2099,7 @@ GameObject:
   - component: {fileID: 1590264225885307927}
   - component: {fileID: 656488099449355605}
   - component: {fileID: 2773624391484726036}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Point64
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2214,7 +2214,7 @@ MonoBehaviour:
   pointValueText: {fileID: 6786389338202053684}
   pointValue: 64
   starValue: 4
-  pointType: 1
+  pointType: 0
   pointColors:
   - {r: 1, g: 0, b: 0, a: 0}
   - {r: 1, g: 0.078431375, b: 0.5764706, a: 0}
@@ -2751,7 +2751,7 @@ GameObject:
   - component: {fileID: 177888061496622854}
   - component: {fileID: 6086854312412864867}
   - component: {fileID: 6865736557301762596}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Point256
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2866,7 +2866,7 @@ MonoBehaviour:
   pointValueText: {fileID: 990974144521285207}
   pointValue: 256
   starValue: 4
-  pointType: 1
+  pointType: 0
   pointColors:
   - {r: 1, g: 0, b: 0, a: 0}
   - {r: 1, g: 0.078431375, b: 0.5764706, a: 0}
@@ -2893,7 +2893,7 @@ GameObject:
   - component: {fileID: 5501185502835610251}
   - component: {fileID: 6579652992340339109}
   - component: {fileID: 3784647829213583095}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Point512
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -3008,7 +3008,7 @@ MonoBehaviour:
   pointValueText: {fileID: 9031977346960785040}
   pointValue: 512
   starValue: 4
-  pointType: 1
+  pointType: 0
   pointColors:
   - {r: 1, g: 0, b: 0, a: 0}
   - {r: 1, g: 0.078431375, b: 0.5764706, a: 0}
@@ -3035,7 +3035,7 @@ GameObject:
   - component: {fileID: 6984654570618383576}
   - component: {fileID: 7074167656821993102}
   - component: {fileID: 5278618377955327022}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Point2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -3150,7 +3150,7 @@ MonoBehaviour:
   pointValueText: {fileID: 1084541472920410597}
   pointValue: 2
   starValue: 4
-  pointType: 1
+  pointType: 0
   pointColors:
   - {r: 1, g: 0, b: 0, a: 0}
   - {r: 1, g: 0.078431375, b: 0.5764706, a: 0}

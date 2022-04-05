@@ -6,13 +6,11 @@ using UnityEngine.UI;
 public class MainMenuController : MonoBehaviour
 {
     public GameObject mainMenu, levelMenu;
-    public LevelManager levelManager;
 
     public void SelectLevel()
     {
-        levelManager.OpenLevel();
-        mainMenu.gameObject.SetActive(false);
-        levelMenu.gameObject.SetActive(true);
+        mainMenu.SetActive(false);
+        levelMenu.SetActive(true);
     }
 
     public void ExitButton()

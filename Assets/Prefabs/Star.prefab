@@ -13,7 +13,7 @@ GameObject:
   - component: {fileID: 8102373540169754362}
   - component: {fileID: 8102373540169754363}
   - component: {fileID: 8102373540169754360}
-  - component: {fileID: 8102373540169754311}
+  - component: {fileID: 2151231036532614643}
   m_Layer: 0
   m_Name: Star
   m_TagString: Untagged
@@ -113,7 +113,7 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 0
---- !u!114 &8102373540169754311
+--- !u!114 &2151231036532614643
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -122,11 +122,6 @@ MonoBehaviour:
   m_GameObject: {fileID: 8102373540169754361}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: c76beb0b713669d42a68cd573eec06e2, type: 3}
+  m_Script: {fileID: 11500000, guid: 79815a4ddb751044ba899c052a5d8157, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  pointValueText: {fileID: 0}
-  pointValue: 0
-  starValue: 0
-  pointType: 3
-  pointColors: []

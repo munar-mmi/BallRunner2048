@@ -6,28 +6,26 @@ public class EnvironmentController : MonoBehaviour
 {
     public enum envTypes { Death, LevelFinal };
     public envTypes envType;
-    public GameObject winMenu, looseMenu;
-
+    public GameObject menuContainer, winMenu, looseMenu;
+    public Player playerObject;
     public LevelManager levelManager;
-    public LevelMenuController levelMenu;
-    public Point playerObject;
 
     void OnCollisionEnter(Collision collision)
     {
-        Point player = collision.gameObject.GetComponent<Point>();
+        Player player = collision.gameObject.GetComponent<Player>();
         if (player == playerObject)
         {
-            if (envType.HasFlag(envTypes.LevelFinal))
+            if (envType == envTypes.LevelFinal)
             {
                 winMenu.SetActive(true);
+                menuContainer.SetActive(true);
 
-                levelManager.NextLevel(playerObject.pointValue, playerObject.starValue);
-
-                playerObject.GameOver();
+                levelManager.NextLevel(player);
+                playerObject.GameOver(levelManager.levelArea);
             }
-            else if (envType.HasFlag(envTypes.Death))
+            else if (envType == envTypes.Death)
             {
-                playerObject.GameOver();
+                playerObject.GameOver(levelManager.levelArea);
                 looseMenu.SetActive(true);
             }
         }
