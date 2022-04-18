@@ -49,7 +49,6 @@ public class LevelManager : MonoBehaviour
         {
             level.levelStar = player.starValue;
         }
-        OpenLevel();
         level.SaveLevel();
         level.ChangeLevelMenu();
     }

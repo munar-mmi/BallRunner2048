@@ -7,6 +7,7 @@ using TMPro;
 public class Player : MonoBehaviour
 {
     public TextMeshPro pointValueText;
+    public ParticleSystem particle;
     public int pointValue;
     public int starValue;
     public Color[] pointColors;
@@ -48,7 +49,11 @@ public class Player : MonoBehaviour
                 pointValue *= 2;
                 ChangePlayer();
 
-                transform.localScale += new Vector3(0.1f, 0.1f, 0.1f);
+                transform.localScale += new Vector3(0.2f, 0.2f, 0.2f);
+
+                var emission = particle.emission;
+                emission.enabled = true;
+                particle.Play();
 
                 Destroy(collision.gameObject);
             }
@@ -58,7 +63,7 @@ public class Player : MonoBehaviour
                 pointValue /= 2;
                 ChangePlayer();
 
-                transform.localScale -= new Vector3(0.1f, 0.1f, 0.1f);
+                transform.localScale -= new Vector3(0.2f, 0.2f, 0.2f);
             }
         }
         else if (collision.gameObject.GetComponent<Star>())
