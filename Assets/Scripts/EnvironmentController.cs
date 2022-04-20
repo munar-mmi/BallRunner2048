@@ -17,10 +17,11 @@ public class EnvironmentController : MonoBehaviour
         {
             if (envType == envTypes.LevelFinal)
             {
+                levelManager.NextLevel(player);
+
                 winMenu.SetActive(true);
                 menuContainer.SetActive(true);
 
-                levelManager.NextLevel(player);
                 playerObject.GameOver(levelManager.levelArea);
             }
             else if (envType == envTypes.Death)

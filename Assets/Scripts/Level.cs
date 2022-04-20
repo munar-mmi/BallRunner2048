@@ -24,6 +24,7 @@ public class Level : MonoBehaviour
         {
             Star[] stars = GetComponentsInChildren<Star>();
             stars[i].GetComponent<Image>().color = new Color(255, 255, 0, 255);
+            stars[i].transform.GetChild(0).gameObject.SetActive(true);
         }
         levelManager.OpenLevel();
     }
